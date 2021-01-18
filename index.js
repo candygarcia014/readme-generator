@@ -53,7 +53,7 @@ const questions = [
 
 // This function writes README file- Each part of the README as follows: 
 function writeToFile(fileName, data) {
-    const badge = generateBadge(data.license);
+    // const badge = generateBadge(data.license);
     //Name of the project
     fs.writeFile(`${fileName}.md`,
     //table of contents 
@@ -64,7 +64,6 @@ function writeToFile(fileName, data) {
     //tests
     //questions
 `# ${data.title}
-![](https://img.shields.io/badge/license-${badge}-green?style=for-the-badge&logo=github)
 ## Description
 ${data.description}
 ## Table of Contents
@@ -110,4 +109,6 @@ function init() {
         writeToFile(answers.title, answers);
     });
 }
+// function call to initialize program
+init();
 
