@@ -1,7 +1,8 @@
+//Requires inquirer 
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// array of questions for user
+//Array of questions for user to determine what will go into the README
 const questions = [
     {
         type: 'input',
@@ -49,3 +50,59 @@ const questions = [
         name: 'email'
     },
 ];
+
+// This function writes README file- Each part of the README as follows: 
+function writeToFile(fileName, data) {
+    const badge = generateBadge(data.license);
+    //Name of the project
+    fs.writeFile(`${fileName}.md`,
+    //table of contents 
+    //installation
+    //usage
+    //license
+    //contributing 
+    //tests
+    //questions
+`# ${data.title}
+![](https://img.shields.io/badge/license-${badge}-green?style=for-the-badge&logo=github)
+## Description
+${data.description}
+## Table of Contents
+[Installation](#Installation)
+<br>
+[Usage](#Usage)
+<br>
+[License](#License)
+<br>
+[Contributing](#Contributing)
+<br>
+[Tests](#Tests)
+<br>
+[Questions](#Questions)
+
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+## License
+This project is covered under the ${data.license}.
+
+## Contributing
+${data.contributing}
+
+## Tests
+${data.tests}
+
+## Questions
+If you have any additional questions, contact me by email or GitHub.
+<br>
+Email: ${data.email}
+<br>
+GitHub: https://github.com/${data.github}`,
+        (err) => err ? console.error(err) : console.log("Thanks you for your information, your README has been generated!")
+    );
+}
+
+
