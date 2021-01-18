@@ -63,21 +63,18 @@ function writeToFile(fileName, data) {
     //contributing 
     //tests
     //questions
-`# ${data.title}
+`# **${data.title}
+
 ## Description
 ${data.description}
-## Table of Contents
-[Installation](#Installation)
-<br>
-[Usage](#Usage)
-<br>
-[License](#License)
-<br>
-[Contributing](#Contributing)
-<br>
-[Tests](#Tests)
-<br>
-[Questions](#Questions)
+
+## **Table of Contents** [Description](#Description)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Contributing](#Contributing)
+* [Tests](#Tests)
+* [License](#License)
+* [Questions](#Questions)
 
 ## Installation
 ${data.installation}
