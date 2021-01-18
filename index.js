@@ -100,13 +100,16 @@ Email: ${data.email}
 GitHub: https://github.com/${data.github}`,
         (err) => err ? console.error(err) : console.log("Thanks you for your input. Congratulations! Your README has been generated!")
     );
+
 }
+
 // This function initializes the program in the terminal 
 function init() {
     inquirer.prompt(questions).then(answers => {
         writeToFile(answers.title, answers);
     });
 }
+
 // THis function calls to initialize the README generator 
 init();
 
