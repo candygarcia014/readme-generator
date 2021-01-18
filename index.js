@@ -68,7 +68,8 @@ function writeToFile(fileName, data) {
 ## Description
 ${data.description}
 
-## **Table of Contents** [Description](#Description)
+## **Table of Contents**
+* [Description](#Description)
 * [Installation](#Installation)
 * [Usage](#Usage)
 * [Contributing](#Contributing)
