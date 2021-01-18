@@ -2,6 +2,8 @@
 ## **Description**
 This app allows the user to quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project. 
 
+This README was generated with the app. It was really helpful and fast and I am going to be using this to write my future readme. The only thinng I wish I would have added automatically is a Demo section to insert the gif demo for my projects.  
+
 
 ## **Table of Contents**
 [Installation](#Installation)
@@ -22,12 +24,11 @@ All dependencies are included in the package.json. In your bash/terminal, type  
 ## **Usage**
 ![DEMO]( images/README.gif)
 
-
 ## **License**
 This project is covered under the N/A.
 
 ## **Contributing**
-IF you would like to contribute, please email me at Candygarcia014@gmail.com. I'd love to work with you! 
+If you would like to contribute, please email me at Candygarcia014@gmail.com. I'd love to work with you! 
 
 ## **Tests**
 N/A
