@@ -56,7 +56,7 @@ function writeToFile(fileName, data) {
     // const badge = generateBadge(data.license);
     //Name of the project
     fs.writeFile(`${fileName}.md`,
-    //table of contents 
+    //table of contents & each section 
     //installation
     //usage
     //license
@@ -65,7 +65,7 @@ function writeToFile(fileName, data) {
     //questions
 `# **${data.title}
 
-## Description
+## **Description**
 ${data.description}
 
 ## **Table of Contents**
@@ -77,22 +77,22 @@ ${data.description}
 * [License](#License)
 * [Questions](#Questions)
 
-## Installation
+## **Installation**
 ${data.installation}
 
-## Usage
+## **Usage**
 ${data.usage}
 
-## License
+## **License**
 This project is covered under the ${data.license}.
 
-## Contributing
+## **Contributing**
 ${data.contributing}
 
-## Tests
+## **Tests**
 ${data.tests}
 
-## Questions
+## **Questions**
 If you have any questions or need additional information please contact me by email or GitHub.
 <br>
 Email: ${data.email}
