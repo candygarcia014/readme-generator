@@ -2,6 +2,8 @@
 ## **Description**
 This app allows the user to quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project. 
 
+This app works inside the terminal.
+
 This README was generated with the app. It was really helpful and fast and I am going to be using this to write my future readme. The only thinng I wish I would have added automatically is a Demo section to insert the gif demo for my projects.  
 
 
