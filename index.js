@@ -96,7 +96,7 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions
-If you have any additional questions, contact me by email or GitHub.
+If you have any questions or need additional information please contact me by email or GitHub.
 <br>
 Email: ${data.email}
 <br>
@@ -104,5 +104,10 @@ GitHub: https://github.com/${data.github}`,
         (err) => err ? console.error(err) : console.log("Thanks you for your information, your README has been generated!")
     );
 }
-
+// This function initializes the program in the terminal 
+function init() {
+    inquirer.prompt(questions).then(answers => {
+        writeToFile(answers.title, answers);
+    });
+}
 
