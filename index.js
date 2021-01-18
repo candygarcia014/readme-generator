@@ -100,7 +100,7 @@ If you have any questions or need additional information please contact me by em
 Email: ${data.email}
 <br>
 GitHub: https://github.com/${data.github}`,
-        (err) => err ? console.error(err) : console.log("Thanks you for your information, your README has been generated!")
+        (err) => err ? console.error(err) : console.log("Thanks you for your input. Congratulations! Your README has been generated!")
     );
 }
 // This function initializes the program in the terminal 
@@ -109,6 +109,6 @@ function init() {
         writeToFile(answers.title, answers);
     });
 }
-// function call to initialize program
+// THis function calls to initialize the README generator 
 init();
 
